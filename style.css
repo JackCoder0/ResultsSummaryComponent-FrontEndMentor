@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+body {
+    display: flex;
+    width: 1440px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    background: rgb(120, 87, 240);
+    background: linear-gradient(180deg, rgba(120, 87, 240, 1) 0%, rgba(46, 43, 233, 1) 100%);
+    width: 368px;
+    height: 511px;
+    border-radius: 30px;
+    padding-top: 45px;
+}
+
+.container h2,
+p {
+    text-align: center;
+}
+
+.result {
+    padding-bottom: 40px;
+    color: hsl(224, 30%, 27%);
+}
+
+.result-info {
+    background: rgb(78, 33, 202);
+    background: linear-gradient(180deg, rgba(78, 33, 202, 1) 0%, rgba(36, 33, 202, 0) 100%);
+    margin: 0 auto;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.container h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.result-info .b76 {
+    font-size: 75px;
+    padding-top: 50px;
+}
+
+.container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(241, 100%, 89%);
+}
+
+.scored {
+    padding-top: 20px;
+}
+
+.scored h2 {
+    font-size: 30px;
+}
+
+.scored p {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.summary-container {
+    background: hsl(0, 0%, 100%);
+    width: 368px;
+    height: 511px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.summary i {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.summary h2 {
+    font-size: 20px;
+    color: hsl(224, 30%, 27%);
+    padding: 25px 0 20px 40px;
+}
+
+.sum-info {
+    font-weight: 700;
+    padding: 0 50px 0 0;
+}
+
+
+#reaction-container {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.151);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 16px;
+    width: 288px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+#memory-container {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.151);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 16px;
+    width: 288px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+#verbal-container {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.151);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 16px;
+    width: 288px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+#visual-container {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.151);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-top: 16px;
+    width: 288px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+#num-reaction {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    padding: 0 0 0 50px;
+    list-style: none;
+}
+
+#num-memory {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    padding: 0 0 0 55px;
+    list-style: none;
+}
+
+#num-verbal {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    padding: 0 0 0 70px;
+    list-style: none;
+}
+
+#num-visual {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    padding: 0 0 0 70px;
+    list-style: none;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 50px;
+    width: 290px;
+    height: 56px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+button:hover {
+    background: rgb(120, 87, 240);
+    background: linear-gradient(180deg, rgba(120, 87, 240, 1) 0%, rgba(46, 43, 233, 1) 100%);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        top: 0;
+        display: grid;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 355px;
+        border-radius: 0 0 30px 30px;
+        padding-top: 20px;
+    }
+
+    .result {
+        font-size: 20px;
+        color: hsl(224, 30%, 27%);
+    }
+
+    .result-info {
+        width: 150px;
+        height: 150px;
+    }
+
+    .result-info .b76 {
+        font-size: 60px;
+        padding-top: 35px;
+    }
+
+    .scored {
+        padding-top: 15px;
+    }
+
+    .scored h2 {
+        font-size: 25px;
+    }
+
+    .scored p {
+        padding-top: 10px;
+    }
+
+    .summary-container {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+
+}
